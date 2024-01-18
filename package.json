@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "concurrently": "^8.2.0"
+    "concurrently": "^8.2.0",
+    "dotenv": "^16.3.1"
   },
   "scripts": {
     "postinstall": "concurrently yarn:postinstall:*",
@@ -9,5 +10,9 @@
     "start": "concurrently yarn:start:*",
     "start:backend": "cd backend && yarn dev",
     "start:frontend": "cd frontend && yarn start"
+  },
+  "devDependencies": {
+    "worker-loader": "^3.0.8",
+    "workerize-loader": "^2.0.2"
   }
 }
