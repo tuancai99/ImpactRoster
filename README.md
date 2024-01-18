@@ -1,5 +1,4 @@
-Documentation: 
-https://www.notion.so/Code-Documentation-b772a6deee0c4d7ea00fe45f9570f7a4?pvs=4 
+Documentation: https://www.notion.so/Code-Documentation-b772a6deee0c4d7ea00fe45f9570f7a4?pvs=4 \
 To run the app, follow these steps:
 - Clone the project.
 - Run yarn install and yarn start.
