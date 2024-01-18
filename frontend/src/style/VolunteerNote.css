@@ -1,0 +1,176 @@
+.header {
+  width: 100%;
+  height: 20%;
+  background-color: #e7eff8;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #e7eff8;
+  box-sizing: border-box;
+}
+
+.first,
+.second {
+  transition: box-shadow 0.3s ease;
+}
+
+.first {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 38%;
+  background-color: #fad0c3;
+  margin: 1%;
+  margin-bottom: 29%;
+  border-radius: 15px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.second {
+  width: 50%;
+  height: 660px;
+  background-color: #f7f09d;
+  margin-left: 30px;
+  border-radius: 15px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.second h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.second div {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.avatar {
+  width: 30% !important;
+  max-width: 120px !important;
+  height: auto !important;
+  border-radius: 50%;
+  margin-right: 8px;
+  position: relative;
+}
+
+.hihi {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.volunteer_name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.text-content {
+  text-align: left;
+}
+
+.list {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list > div {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .first {
+    width: 90% !important;
+    margin-right: 0;
+  }
+
+  .second {
+    width: 90% !important;
+  }
+
+  .hihi {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .list > div {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+div.online-indicator {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+
+  background-color: #0fcc45;
+  border-radius: 50%;
+
+  position: relative;
+}
+span.blink {
+  display: block;
+  width: 15px;
+  height: 15px;
+
+  background-color: #0fcc45;
+  opacity: 0.7;
+  border-radius: 50%;
+
+  animation: blink 1s linear infinite;
+}
+
+/*Animations*/
+
+@keyframes blink {
+  100% {
+    transform: scale(2, 2);
+    opacity: 0;
+  }
+}
+.online-indicator {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.online-indicator.gray {
+  background-color: gray;
+}
+
+.online-indicator.green {
+  background-color: #0fcc45;
+}
+
+.backButton {
+  padding: 12px 12px;
+  margin: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid rgba(52, 152, 219, 0);
+  transition: background-color 0.3s;
+  background-color: #91cafb;
+}
+.backButton:hover {
+  background-color: #038aff;
+}

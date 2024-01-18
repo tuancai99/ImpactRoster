@@ -1,0 +1,18 @@
+.status-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.status-badge.active {
+  background-color: #b5e8b5;
+  color: #02a204;
+}
+
+.status-badge.inactive {
+  background-color: #f2e5ac;
+  color: #bea339;
+}
