@@ -1,0 +1,27 @@
+/* Pagination.css */
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageButton {
+  padding: 8px 12px;
+  margin: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #000000;
+  border: 1px solid rgba(52, 152, 219, 0);
+  transition: background-color 0.3s;
+}
+
+.pageButton:hover {
+  background-color: #038aff;
+  color: #fff;
+}
+
+.currentPage {
+  background-color: #91cafb;
+  color: #fff;
+}
